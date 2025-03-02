@@ -1,7 +1,9 @@
 # Medical-image-segmentation-and-enhancement
 
 ***
+
 ##各文件含义：
+
 (1). CTcase_num.txt: 其中包含51个病例编号。这是从totalsegmentatorCT数据集中制作的肺部CT子集中的病例号；
 
 (2). DiceJaccardHausdorff.py: 计算Dice score、 Jaccard index和hausdorff distance；
@@ -11,8 +13,11 @@
 (4). MergeAll.py: 将totalsegmentator数据集中的真实分割结果合并为一个图像。
 
 ***
+
 ##复现各项目所用到的命令：
-(1). Totalsegmentator: 
+
+(1). Totalsegmentator
+
 官方github：https://github.com/wasserth/TotalSegmentator
 
 分割：TotalSegmentator -i D:/TotalSegmentator/s0011/ct.nii.gz  -o D:/TotalSegmentator/seg
@@ -20,6 +25,7 @@
 注意 -i后接原始数据的路径， -o后接分割结果的存储位置
 
 (2). nnUNet
+
 官方github：https://github.com/MIC-DKFZ/nnUNet
 
 预处理：nnUNetv2_plan_and_preprocess -d 2 --verify\_dataset\_integrity 
@@ -42,6 +48,7 @@ nnUNetv2\_train 2 3d\_fullres 4
 3d\_fullres可替换为3d\_lowres(低分辨率）、2d(2D U-Net). 本文使用3d_lowres
 
 (3). Deformation recovery diffusion model
+
 官方github：https://github.com/jianqingzheng/def_diff_rec
 
 数据增强：
