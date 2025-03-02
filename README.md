@@ -10,7 +10,9 @@
 
 (3). MedianfilePlusGaussianfilter.py: 对得到的数据集进行中值滤波和高斯滤波；
 
-(4). MergeAll.py: 将totalsegmentator数据集中的真实分割结果合并为一个图像。
+(4). MergeAll.py: 将totalsegmentator: 数据集中的真实分割结果合并为一个图像;
+
+(5). Medical Image Segmentation and Enhancement.PDF: 报告。
 
 ***
 
