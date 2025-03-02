@@ -12,7 +12,7 @@
 
 (4). MergeAll.py: 将totalsegmentator: 数据集中的真实分割结果合并为一个图像;
 
-(5). Medical Image Segmentation and Enhancement.PDF: 报告。
+(5). Medical Image Segmentation and Enhancement.pdf: 报告。
 
 ***
 
@@ -53,8 +53,14 @@ nnUNetv2\_train 2 3d\_fullres 4
 
 官方github：https://github.com/jianqingzheng/def_diff_rec
 
+
 数据增强：
 
 python DRDM_augment.py --config Config/config_lct.yaml
 
 注意，应先cd到项目文件下的DRDM_augment.py文件所在的位置，再运行该命令
+
+
+
+
+详细复现过程与结果见Medical Image Segmentation and Enhancement.pdf
